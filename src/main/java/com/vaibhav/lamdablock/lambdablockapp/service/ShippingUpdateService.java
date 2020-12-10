@@ -1,6 +1,6 @@
 package com.vaibhav.lamdablock.lambdablockapp.service;
 
-import com.vaibhav.lamdablock.lambdablockapp.model.ShipmentInfo;
+import com.vaibhav.lamdablock.lambdablockapp.Entity.ShipmentInfo;
 import com.vaibhav.lamdablock.lambdablockapp.repository.ShippingUpdateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

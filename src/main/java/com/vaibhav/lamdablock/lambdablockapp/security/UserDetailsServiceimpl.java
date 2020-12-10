@@ -1,7 +1,7 @@
 package com.vaibhav.lamdablock.lambdablockapp.security;
 
 import com.vaibhav.lamdablock.lambdablockapp.model.UserDto;
-import com.vaibhav.lamdablock.lambdablockapp.model.UserInfo;
+import com.vaibhav.lamdablock.lambdablockapp.Entity.UserInfo;
 import com.vaibhav.lamdablock.lambdablockapp.repository.UserInfoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;

@@ -1,5 +1,6 @@
 package com.vaibhav.lamdablock.lambdablockapp.model;
 
+import com.vaibhav.lamdablock.lambdablockapp.Entity.ShipmentInfo;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

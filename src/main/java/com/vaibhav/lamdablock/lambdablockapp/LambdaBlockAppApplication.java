@@ -1,13 +1,10 @@
 package com.vaibhav.lamdablock.lambdablockapp;
 
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.vaibhav.lamdablock.lambdablockapp.enums.SHIPPINGSTATUS;
-import com.vaibhav.lamdablock.lambdablockapp.model.CustomerInfo;
-import com.vaibhav.lamdablock.lambdablockapp.model.ShipmentInfo;
-import com.vaibhav.lamdablock.lambdablockapp.model.UserInfo;
+import com.vaibhav.lamdablock.lambdablockapp.Entity.CustomerInfo;
+import com.vaibhav.lamdablock.lambdablockapp.Entity.ShipmentInfo;
 import com.vaibhav.lamdablock.lambdablockapp.repository.CustomerInfoRepository;
 import com.vaibhav.lamdablock.lambdablockapp.repository.ShippingUpdateRepository;
-import com.vaibhav.lamdablock.lambdablockapp.service.UserService;
 
 //import org.apache.log4j.Logger;
 import org.apache.commons.lang.time.DateUtils;
@@ -17,8 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import java.util.Arrays;

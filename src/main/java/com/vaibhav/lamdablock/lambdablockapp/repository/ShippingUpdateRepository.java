@@ -1,6 +1,6 @@
 package com.vaibhav.lamdablock.lambdablockapp.repository;
 
-import com.vaibhav.lamdablock.lambdablockapp.model.ShipmentInfo;
+import com.vaibhav.lamdablock.lambdablockapp.Entity.ShipmentInfo;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

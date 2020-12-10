@@ -1,4 +1,4 @@
-package com.vaibhav.lamdablock.lambdablockapp.model;
+package com.vaibhav.lamdablock.lambdablockapp.Entity;
 
 
 

@@ -1,5 +1,6 @@
 package com.vaibhav.lamdablock.lambdablockapp.controller;
 
+import com.vaibhav.lamdablock.lambdablockapp.Entity.ShipmentInfo;
 import com.vaibhav.lamdablock.lambdablockapp.model.*;
 import com.vaibhav.lamdablock.lambdablockapp.service.ShippingUpdateService;
 import org.springframework.beans.factory.annotation.Autowired;

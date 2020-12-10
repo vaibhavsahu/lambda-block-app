@@ -1,13 +1,11 @@
 package com.vaibhav.lamdablock.lambdablockapp.controller;
 
-import com.vaibhav.lamdablock.lambdablockapp.LambdaBlockAppApplication;
 import com.vaibhav.lamdablock.lambdablockapp.model.JwtRequest;
 import com.vaibhav.lamdablock.lambdablockapp.model.UserDto;
-import com.vaibhav.lamdablock.lambdablockapp.model.UserInfo;
+import com.vaibhav.lamdablock.lambdablockapp.Entity.UserInfo;
 import com.vaibhav.lamdablock.lambdablockapp.model.UserResponse;
 import com.vaibhav.lamdablock.lambdablockapp.security.JwtTokenUtil;
 import com.vaibhav.lamdablock.lambdablockapp.security.UserDetailsServiceimpl;
-import com.vaibhav.lamdablock.lambdablockapp.service.UserService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,11 +15,7 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Optional;
 
 import static com.vaibhav.lamdablock.lambdablockapp.security.JwtTokenUtil.JWT_TOKEN_VALIDITY;
 
