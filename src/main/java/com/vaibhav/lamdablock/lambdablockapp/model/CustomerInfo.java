@@ -32,11 +32,11 @@ public class CustomerInfo {
     private String password;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinTable(
-            name = "DD_CUSTOMER_SHIPMENT_INFO",
-            joinColumns = @JoinColumn(name = "CUST_ID"),
-            inverseJoinColumns = @JoinColumn(name = "SHIPMENT_ID")
-    )
+    @JoinTable(name = "DD_CUSTOMER_SHIPMENT_INFO",
+            joinColumns = @JoinColumn(name = "CUSTOMER_ID", referencedColumnName = "CUST_ID"),
+            inverseJoinColumns = {@JoinColumn(name = "SHIPMENT_ID", referencedColumnName = "SHIPPING_ID"),
+                    @JoinColumn(name = "SHIPPING_STATUS", referencedColumnName = "SHIPPING_STATUS"),
+                    @JoinColumn(name = "SHIPPING_CREATED_DATE", referencedColumnName = "SHIPPING_CREATED_DATE")})
     private Set<ShipmentInfo> shipments;
 
     public CustomerInfo(){}
